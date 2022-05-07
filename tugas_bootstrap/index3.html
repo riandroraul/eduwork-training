@@ -1,0 +1,1674 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <title>Website Eduwork</title>
+</head>
+
+<body>
+
+    <div id="main" style="opacity: 1; ">
+        <!-- header-->
+        <!-- <header class="main-header dark-header fs-header sticky"> -->
+        <header class="main-header fs-header sticky" style="background-color: #fff">
+            <div class="header-inner container">
+                <div class="logo-holder">
+                    <a href="https://eduwork.id"><img src="https://eduwork.id/images/logo3.png" alt=""></a>
+                </div>
+                <!-- <div class="header-search vis-header-search">
+                    <form action="https://eduwork.id/kelas" method="GET">
+                        <div class="header-search-input-item">
+                            <input type="text" placeholder="Judul Kelas" name="title"
+                                value="" style="background:#f3f3f3" />
+                        </div>
+                        <div class="header-search-select-item" style="background: #e8e8e8; border-radius: 0;">
+                                      <select data-placeholder="Location" class="chosen-select" name="city">
+              <option value="">Pilih Kota</option>
+            <option value="1" >Yogyakarta</option>
+                                          </select>
+      </div>
+      <button class="header-search-button"
+          onclick="window.location.href='listing.html'">Submit</button>
+  </form>
+</div>
+<div class="show-search-button"><i class="fa fa-search"></i> <span>Search</span></div> -->
+
+                <a class="add-list modal-open hidden-xs btn-auth-nav" id="link-register" onClick="$('.tab-register').click()" style="cursor: pointer">
+                    Register <span><i class="fa fa-plus"></i></span>
+                </a>
+
+                <div class="show-reg-form modal-open hidden-xs btn-auth-nav" onClick="$('.tab-login').click()"><i class="fa fa-sign-in"></i>Sign In</div>
+
+
+                <!-- nav-button-wrap-->
+                <div class="nav-button-wrap color-bg">
+                    <div class="nav-button">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <!-- nav-button-wrap end-->
+                <!--  navigation -->
+
+                <div class="nav-holder main-menu">
+                    <nav>
+                        <ul>
+                            <li> <a href="https://eduwork.id" class="act-link">Home</a> </li>
+                            <li>
+                                <a href="https://eduwork.id/kelas" class="">
+                                Kelas
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+                                <ul style="width: 300px">
+
+
+
+
+
+
+                                    <li>
+                                        <a href="https://eduwork.id/kelas?type=private">Private Mentoring </a>
+
+
+
+
+
+                                    </li>
+                                    <li>
+                                        <a href="https://eduwork.id/kelas?type=webinar">Webinar </a>
+
+
+
+
+
+                                    </li>
+                                    <!-- <li><a href="https://eduwork.id/kelas?category=4">Others</a></li>
+                                    <li><a href="https://eduwork.id/kelas?type=private">Private Mentoring</a></li>
+                                    <li><a href="https://eduwork.id/kelas?type=bootcamp">Bootcamp</a></li> -->
+                                </ul>
+                            </li>
+                            <!-- <li> <a href="https://eduwork.id/mentor-eduwork" class="">Become a Mentor</a> </li> -->
+                            <li class="hidden-lg hidden-md">
+                                <a href="#" class="modal-open" onClick="$('#link-register').click(); $('.tab-login').click()">Sign in</a>
+                            </li>
+                            <li class="hidden-lg hidden-md">
+                                <a href="#" onClick="$('#link-register').click()">Register</a>
+                            </li>
+
+
+                            <!-- <li> <a href="#">F.A.Q</a> </li> -->
+                            <!-- <li>
+                                <a href="#">F.A.Q<i class="fa fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="listing.html">Column map</a></li>
+                                    <li><a href="listing2.html">Column map 2</a></li>
+                                    <li><a href="listing3.html">Fullwidth Map</a></li>
+                                    <li><a href="listing4.html">Fullwidth Map 2</a></li>
+                                    <li><a href="listing5.html">Without Map</a></li>
+                                    <li><a href="listing6.html">Without Map 2</a></li>
+                                    <li>
+                                        <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                        <ul>
+                                            <li><a href="listing-single.html">Style 1</a></li>
+                                            <li><a href="listing-single2.html">Style 2</a></li>
+                                            <li><a href="listing-single3.html">Style 3</a></li>
+                                            <li><a href="listing-single4.html">Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li> <a href="https://eduwork.id/contact">Contact</a> </li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <!-- navigation  end -->
+            </div>
+        </header>
+        <!--  header end -->
+        <!-- Content-->
+        <!-- Content end-->
+        <!-- wrapper -->
+
+        <style>
+            .sub-title {
+                font-size: 26px !important
+            }
+            
+            .cs-countdown-item {
+                padding: 15px 30px
+            }
+            
+            @media screen and (min-width: 768px),
+            screen and (min-height: 768px) {
+                .hero-section {
+                    padding-top: 80px !important;
+                }
+                .daftar-button {
+                    margin: 0px 0 100px 0
+                }
+                /*.slider-container .hero-section-wrap {
+            padding-top:50px !important;
+        }*/
+            }
+            
+            @media screen and (max-width: 768px) {
+                /*.hero-section {padding-bottom: 100px !important; }*/
+                .slider-container-wrap {
+                    padding: 250px 0 155px;
+                    height: unset !important;
+                }
+                .imagebg {
+                    display: none;
+                }
+                h3.subdesc {
+                    margin-bottom: 10px
+                }
+                .hero-section-wrap {
+                    padding-top: 100px !important;
+                }
+                h2.sub-title {
+                    font-size: 22px !important
+                }
+                #form-pendaftaran {
+                    margin-top: 10px;
+                }
+                .sw-btn {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                .slider-container-wrap .sw-btn {
+                    margin-top: 0;
+                    top: 50% !important;
+                }
+                .gray-section {
+                    padding-top: 0 !important;
+                }
+            }
+            
+            .title_1 {
+                text-align: center
+            }
+            
+            .title_2 {
+                font-size: 40px !important;
+                text-align: center;
+            }
+            
+            .daftar-button {
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 30px
+            }
+            
+            .title2_1 {}
+            
+            @media only screen and (max-width: 540px) {
+                .single-facts .inline-facts-wrap,
+                .team-box,
+                .cs-countdown-item,
+                .list-single-header-contacts li,
+                .list-single-facts .inline-facts-wrap,
+                .listing-features li,
+                .listing-item,
+                .statistic-item-wrap,
+                #progressbar li {
+                    width: 50%;
+                }
+                .title_1 {
+                    font-size: 28px !important;
+                    padding-bottom: 10px !important;
+                    text-align: center
+                }
+                .title_2 {
+                    font-size: 20px !important;
+                    text-align: center;
+                }
+                .daftar-button {
+                    text-align: center;
+                    margin-top: 0px !important;
+                }
+                .title2_1 {
+                    font-size: 28px !important;
+                    padding-bottom: 0px !important
+                }
+            }
+            
+            .daftar {
+                color: #fff;
+                padding: 10px 15px;
+                background: #4db7fe;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            
+            .daftar-sekarang {
+                cursor: pointer;
+            }
+            
+            .phone {
+                border: 1px solid #d6d6d6;
+                background: #f9f9f9;
+                width: 100%;
+                padding: 15px 20px 15px 20px;
+                border-radius: 6px;
+                color: #666;
+                font-size: 13px;
+                -webkit-appearance: none;
+            }
+            /*@media  only screen and (max-width: 1324px) {}*/
+            
+            .slider-container .slider-item {
+                display: none;
+            }
+            
+            .slider-container {
+                background: #0092FF
+            }
+            
+            .slider-container .hero-section-wrap {
+                padding-top: 200px;
+            }
+        </style>
+
+        <section class="hero-section no-dadding" id="sec1">
+            <div class="slider-container-wrap fl-wrap">
+                <div class="slider-container">
+
+
+                    <div class="slider-item fl-wrap">
+
+                        <div class="bg bg-ser" data-bg="https://eduwork.id/images/slidebg/background-video-eduwork.png?v=3"></div>
+
+                        <div class="media-container-wrap">
+                            <div class="media-container">
+                                <div class="video-container">
+                                    <video autoplay="" muted="" loop="">
+                                <source src="https://eduwork.id/video/repeat-medium.mp4?v=2" type="video/mp4">
+                            </video>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                        <div class="hero-section-wrap fl-wrap">
+                            <div class="container">
+                                <div class="intro-item fl-wrap" style="padding: 20px">
+
+                                    <h2 class="title_1">
+                                        Raih profesi idamanmu, kami bantu sampai diterima kerja
+                                    </h2>
+                                    <h3 class="title_2">tanpa biaya pendaftaran !</h3>
+
+                                    <div style="clear: both;"></div>
+
+                                    <div class="daftar-button">
+
+                                        <a class="add-list modal-open" id="link-register" onClick="$('.tab-register').click()" style="cursor: pointer; float: unset; font-size: 20px; background: #04436d">
+                                    DAFTAR SEKARANG</span>
+                                    </a>
+
+                                    </div>
+                                </div>
+                                <!-- <div style="position: absolute; right: 0; z-index: -1; bottom: -275px" class="imagebg">
+                            <img src="https://eduwork.id/images/slidebg/mentor.png">
+                        </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item fl-wrap">
+
+                        <div class="bg bg-ser" data-bg="https://eduwork.id/images/slidebg/background-video-eduwork.png?v=3"></div>
+
+                        <div class="media-container-wrap">
+                            <div class="media-container">
+                                <div class="video-container">
+                                    <video autoplay="" muted="" loop="">
+                                <source src="https://eduwork.id/video/repeat-medium.mp4?v=2" type="video/mp4">
+                            </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                        <div class="hero-section-wrap fl-wrap">
+                            <div class="container">
+                                <div class="intro-item fl-wrap">
+                                    <h2 class="title2_1">
+                                        Program Pelatihan & Penyaluran ISA, bayar nanti setelah berpenghasilan dan bisa dicicil sampai 12x.
+                                    </h2>
+                                    <div style="clear: both;"></div>
+                                    <div style="text-align: center; margin-top: 0px" class="daftar-button">
+                                        <a class="add-list modal-open" id="link-register" onClick="$('.tab-register').click()" style="cursor: pointer; float: unset; font-size: 20px; background: #04436d">
+                                    DAFTAR SEKARANG</span>
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-button-prev sw-btn"><i class="fa fa-long-arrow-left"></i></div>
+                <div class="swiper-button-next sw-btn"><i class="fa fa-long-arrow-right"></i></div>
+            </div>
+        </section>
+
+        <script>
+            $(document).ready(function() {
+                // $(".daftar-sekarang").click(function()
+                // {
+                //     $("#register-from-profile").show() ; 
+                //     $(".tab-modal-register").click() ; 
+                // });
+
+                url = new URL(window.location.href);
+
+                if (url.searchParams.get('open_pilihan')) {
+                    $("#register-from-profile").show();
+                }
+
+                if ('' == 'register_from_profile') {
+                    $("#register-from-profile").show();
+                    $(".tab-modal-register").click();
+                }
+
+                if ('' == 'login_from_profile') {
+
+                    $(document).ready(function() {
+                        $("#register-from-profile").show();
+                        $(".tab-modal-login").click();
+                    });
+                }
+
+
+
+                $(".close-reg").click(function() {
+                    $(".modal").hide();
+                });
+
+            });
+        </script>
+
+        <style type="text/css">
+            .video-motion {
+                padding: 20px;
+                margin-bottom: 20px
+            }
+            
+            .features-box {
+                margin: 20px 0 20px 0;
+            }
+            
+            .features-box p {
+                font-size: 16px;
+            }
+            
+            .ft {
+                font-size: 30px;
+                color: #4db7fe;
+                font-weight: bold;
+                text-align: left;
+            }
+            
+            @media screen and (max-width: 768px) {
+                .slider-container-wrap .sw-btn {
+                    margin-top: 0;
+                    top: 80% !important;
+                }
+                .video-motion {
+                    padding: 0px
+                }
+                .ft {
+                    padding: 20px !important;
+                    text-align: center;
+                }
+            }
+            
+            .iframe-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+                height: 0;
+            }
+            
+            .iframe-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <div class="wa">
+            <a style="margin-left: 0 ; color: #fff" href="https://api.whatsapp.com/send?phone=628886669969&text=halo">
+                <span class="">Tanya ?</span>
+                <i class="fa fa-whatsapp"></i> &nbsp 0888-6669-969
+            </a>
+        </div>
+
+        <!-- <script type="text/javascript">
+    window.onload= function(){
+        var x = document.getElementById("motion").play();
+    }
+    </script> -->
+        <div class="content">
+            <section style="padding-top: 50px  ">
+
+                <div class="container wraper-support-button">
+
+
+                    <div class="elementor-row" style="flex-wrap: wrap; display: flex;">
+
+
+
+                        <div class="features-box col-md-4">
+
+                            <div class="time-line-icon">
+                                <i class="fa fa-television"></i>
+                            </div>
+                            <h3>Apa sih eduwork itu?</h3>
+                            <p>Platform yang membantu kamu mendapatkan pekerjaan, di bimbing oleh mentor yang akan menjadi teman seperjuanganmu dalam belajar & ber-karir.</p>
+
+                        </div>
+
+                        <div class="features-box col-md-4">
+                            <div class="time-line-icon">
+                                <i class="fa fa-television"></i>
+                            </div>
+                            <h3>Program ISA</h3>
+                            <p>Dengan program Income Sharing Agreement, kamu bisa fokus belajar dulu, bayarnya nanti setelah mendapatkan kerja / penghasilan. </p>
+                        </div>
+
+                        <div class="features-box col-md-4">
+                            <div class="time-line-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <h3>Berbagai Mentor</h3>
+                            <p>Ada berbagai mentor / kelas yang tersedia berbagai bidang. Pilih mentor atau bidang yang kalian inginkan. Dan kejar pekerjaan idaman kalian !</p>
+                        </div>
+
+                        <div class="features-box col-md-4">
+                            <div class="time-line-icon">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <h3>Penyaluran kerja</h3>
+                            <p>Setelah lulus kamu akan dibantu untuk mendapatkan pekerjaan sesuai dengan ilmu yang kalian pelajari. </p>
+                        </div>
+                        <div class="features-box col-md-4">
+                            <div class="time-line-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <h3>Ilmu Praktis</h3>
+                            <p>Dibimbing oleh mentor yang berpengalaman di dunia industri, jadi belajar praktek praktis, bukan sebatas teori akademik!</p>
+                        </div>
+                        <div class="features-box col-md-4">
+                            <div class="time-line-icon">
+                                <i class="fa fa-television"></i>
+                            </div>
+                            <h3>Flexible Intensif</h3>
+                            <p>Bisa secara Online atau Offline, diskusikan & sepakati saja semuanya dengan mentormu !</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+
+        <style type="text/css">
+            #tahapan h3 {
+                color: #fff;
+                font-size: 30px;
+                margin-bottom: -15px
+            }
+            
+            #tahapan p,
+            #tahapan i {
+                color: #fff !important
+            }
+            
+            #tahapan .time-line-icon {
+                font-size: 50px;
+                color: #fff;
+                background: none;
+                border: solid 1px #fff;
+                border-radius: 50%;
+            }
+            
+            #tahapan .shapes-bg-big:before {
+                background-image: none
+            }
+            
+            #tahapan .features-box {
+                margin: 0 0 50px 0
+            }
+            
+            #tahapan .section-subtitle {
+                opacity: 0
+            }
+            
+            #faq .section-subtitle {
+                opacity: 0
+            }
+            
+            section#tahapan {
+                padding-bottom: 300px;
+            }
+            
+            .women {
+                position: absolute;
+                z-index: -1;
+                margin-top: -150px
+            }
+            
+            @media only screen and (max-width: 1000px) {
+                section#tahapan {
+                    padding-bottom: 00px;
+                }
+                .women {
+                    width: 100%;
+                    position: unset;
+                    margin-top: unset;
+                }
+                #tahapan .features-box {
+                    margin: 0 !important
+                }
+            }
+        </style>
+        <section class="color-bg" style="background: #0092FF; background-image: none" id="tahapan">
+            <div class="shapes-bg-big"></div>
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="color: #fff">Bagaimana tahapnya ? </h2>
+                    <div class="section-subtitle">popular questions</div>
+                    <span class="section-separator"></span>
+                    <p> berikut tahapanya </p>
+                </div>
+                <div class="row" style="padding: 0 20px;">
+                    <div class="features-box col-md-4">
+                        <div class="time-line-icon">
+                            1
+                        </div>
+                        <h3>Daftar</h3>
+                        <p>Pilih jenis pekerjaan / kelas yang anda inginkan</p>
+                    </div>
+                    <div class="features-box col-md-4">
+                        <div class="time-line-icon">
+                            2
+                        </div>
+                        <h3>Seleksi</h3>
+                        <p>Hanya menerima yang memiliki komitmen</p>
+                    </div>
+                    <div class="features-box col-md-4">
+                        <div class="time-line-icon">
+                            3
+                        </div>
+                        <h3>Confirm</h3>
+                        <p>memastikan / mencari mentor yang bersedia</p>
+                    </div>
+                    <div class="features-box col-md-4">
+                        <div class="time-line-icon">
+                            4
+                        </div>
+                        <h3>Belajar</h3>
+                        <p>Belajar online / offline sepakati dengan mentor</p>
+                    </div>
+                    <div class="features-box col-md-4">
+                        <div class="time-line-icon">
+                            5
+                        </div>
+                        <h3>Penyaluran</h3>
+                        <p>Eduwork membantu anda mendapatkan kerja</p>
+                    </div>
+                    <div class="features-box col-md-4">
+                        <div class="time-line-icon">
+                            6
+                        </div>
+                        <h3>Cicilan</h3>
+                        <p>Mulai cicilan dari penghasilan</p>
+                    </div>
+                </div>
+                <div class="women">
+                    <img src="https://eduwork.id/images/woman2.jpg" width="100%">
+                </div>
+            </div>
+        </section>
+
+        <style type="text/css">
+            #testi p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+            
+            #testi .post-author {
+                font-size: 18px;
+                width: 150px;
+                text-align: left;
+            }
+            /*#testi .container { width: 1000px !important; }*/
+            
+            #testi .box-testi {
+                margin: 10px 0;
+            }
+            
+            #testi .card-post-content {
+                min-height: 100%;
+            }
+            
+            #testi .jabatan {
+                font-size: 12px;
+                top: -5px !important;
+                color: #B2B2B2
+            }
+        </style>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-88cf7e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="88cf7e1" data-element_type="section" id="testi">
+            <div class="elementor-column-gap-default container">
+                <div class="elementor-row">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-485de2f" data-id="485de2f" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-17a7253 elementor-widget elementor-widget-section_title" data-id="17a7253" data-element_type="widget" data-widget_type="section_title.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="section-title">
+                                            <h2>Testimonials</h2>
+                                            <div class="section-subtitle">From the blog.</div>
+                                            <span class="section-separator"></span>
+                                            <p>Lihat komentar komentar dari lulusan kami</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-c7dca35 elementor-widget elementor-widget-posts_grid" data-id="c7dca35" data-element_type="widget" data-widget_type="posts_grid.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="row" style="flex-wrap: wrap; display: flex; padding: 0 20px;">
+
+                                            <div class="col-md-4 box-testi">
+                                                <div class="card-post-content fl-wrap">
+
+                                                    <div class="post-author" style="margin-bottom: 20px">
+                                                        <img alt="CTHthemes" class="avatar avatar-80 photo lazy loaded" height="80" width="80" src="https://eduwork.id/images/avatar/pajar.jpg">
+                                                        <a href="#" rel="author">Pajar</a>
+                                                        <span class="jabatan">Programmer </span>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+
+                                                    <p>
+                                                        Saya seorang lulusan SMK, materi dan bimbingan yang diberikan sangat baik untuk di dunia kerja. mentor yang berpengalaman selalu membantu masalah yang ada selama belajar. langsung dibantu disalurkan ke perusahaan, dan terbukti bahwa saya bisa mendapatkan
+                                                        tawaran kerja di 3 perusahaan berbeda. Luar biasa!
+                                                    </p>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 box-testi">
+                                                <div class="card-post-content fl-wrap">
+
+                                                    <div class="post-author" style="margin-bottom: 20px">
+                                                        <img alt="CTHthemes" class="avatar avatar-80 photo lazy loaded" height="80" width="80" src="https://eduwork.id/images/avatar/galih.jpg">
+                                                        <a href="#" rel="author">Galih</a>
+                                                        <span class="jabatan">Programmer </span>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                    <p>
+                                                        didunia pemrograman menghapal syntax tidak prioritas, karena bisa dilihat di dokumentasi. disini saya mendapatkan arahan yang tepat bagaimana memecahkan masalah yang besar dibagi menjadi masalah yang kecil sehingga bisa diselesaikan bertahap. dengan arahan
+                                                        yang mudah dimengerti
+                                                    </p>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 box-testi">
+                                                <div class="card-post-content fl-wrap">
+                                                    <!-- <h3 class="entry-title"><a href="https://citybook2.cththemes.com/integer-sagittis/" rel="bookmark">Integer sagittis</a></h3> -->
+                                                    <div class="post-author" style="margin-bottom: 20px">
+                                                        <img alt="CTHthemes" class="avatar avatar-80 photo lazy loaded" height="80" width="80" data-src="https://eduwork.id/images/avatar/5.jpg" data-lazy="https://eduwork.id/images/avatar/5.jpg" src="https://eduwork.id/images/avatar/5.jpg" data-was-processed="true">
+                                                        <a href="#" rel="author">Vandy</a>
+                                                        <span class="jabatan">Programmer </span>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                    <p>
+                                                        sangat bagus & sangat jelas saya yg sebelumnya tidak pernah menggunakan framework laravel jdi sanggar akrab dgn laravel dan setiap peserta yang sudah lulus bisa mendapatkan portofolio untuk bekal melamar di perusahaan, diajarkan softskill seperti tips
+                                                        trik saat interview
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4 box-testi">
+                                                <div class="card-post-content fl-wrap">
+
+                                                    <div class="post-author" style="margin-bottom: 20px">
+                                                        <img alt="CTHthemes" class="avatar avatar-80 photo lazy loaded" height="80" width="80" data-src="https://eduwork.id/images/avatar/1.jpg" data-lazy="https://eduwork.id/images/avatar/1.jpg" src="https://eduwork.id/images/avatar/1.jpg" data-was-processed="true">
+
+                                                        <a href="#" rel="author">Frada</a>
+                                                        <span class="jabatan">Programmer </span>
+
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                    <p>
+                                                        Setelah lulus saya berkeinginan untuk mengasah skill lebih dalam lagi agar jadi programmer yang siap kerja. Eduwork lah jawabanya, saya mendapatkan arahan yang tepat. Metode belajar yang asik dan mentor yang selalu membantu memecahkan masalah.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 box-testi">
+                                                <div class="card-post-content fl-wrap">
+
+                                                    <div class="post-author" style="margin-bottom: 20px">
+                                                        <img alt="CTHthemes" class="avatar avatar-80 photo lazy loaded" height="80" width="80" src="https://eduwork.id/images/avatar/fahza.jpg">
+
+                                                        <a href="#" rel="author">Fahza</a>
+                                                        <span class="jabatan">Programmer </span>
+
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                    <p>
+                                                        Sangat menyenang kan belajar di sana , kita di ajarkan cara belajar sehingga kita bisa mandiri kedepanya bila ada update teknologi , suasana belajar juga asik dan fleksibel.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 box-testi">
+                                                <div class="card-post-content fl-wrap">
+
+                                                    <div class="post-author" style="margin-bottom: 20px">
+                                                        <img alt="CTHthemes" class="avatar avatar-80 photo lazy loaded" height="80" width="80" src="https://eduwork.id/images/avatar/imam.jpg">
+
+                                                        <a href="#" rel="author">Imam</a>
+                                                        <span class="jabatan">Programmer </span>
+
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                    <p>
+                                                        Pembelajaran yg interaktif membuat suasana belajar menjadi seru, mentor yg ramah membuat nyaman suasana belajar, arahan dari mentor jelas dan mudah dipahami, yg menjadi nilai tambah adalah adanya pembelajaran untuk debuging saat develop sistem
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style type="text/css">
+            /*#logo-penyaluran .container { width: 1000px  }*/
+            /*#logo-penyaluran .spons-list li img { width: unset; } */
+            /*#logo-penyaluran .spons-list li { width: 100px; } */
+        </style>
+        <section id="logo-penyaluran" style="padding-top: 0" class="hidden-xs">
+            <div class="elementor-column-gap-default container">
+                <div class="elementor-row">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-57e7f1ab" data-id="57e7f1ab" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-eadef37 elementor-widget elementor-widget-our_partners" data-id="eadef37" data-element_type="widget" data-widget_type="our_partners.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fl-wrap spons-list">
+                                            <ul class="client-carousel">
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="attachment-partner size-partner lazy" alt="" loading="lazy" data-src="https://eduwork.id/images/clients/4.png" data-lazy="https://eduwork.id/images/clients/4.png" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="attachment-partner size-partner lazy" alt="" loading="lazy" data-src="https://eduwork.id/images/clients/5.png" data-lazy="https://eduwork.id/images/clients/5.png" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="attachment-partner size-partner lazy" alt="" loading="lazy" data-src="https://eduwork.id/images/clients/6.png" data-lazy="https://eduwork.id/images/clients/6.png" /></a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="attachment-partner size-partner lazy" alt="" loading="lazy" data-src="https://eduwork.id/images/clients/8.png" data-lazy="https://eduwork.id/images/clients/8.png" /></a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="attachment-partner size-partner lazy" alt="" loading="lazy" data-src="https://eduwork.id/images/clients/9.png" data-lazy="https://eduwork.id/images/clients/9.png" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="attachment-partner size-partner lazy" alt="" loading="lazy" data-src="https://eduwork.id/images/clients/7.png" data-lazy="https://eduwork.id/images/clients/7.png" /></a>
+                                                </li>
+                                            </ul>
+                                            <div class="sp-cont sp-cont-prev"><i class="fa fa-angle-left"></i></div>
+                                            <div class="sp-cont sp-cont-next"><i class="fa fa-angle-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style type="text/css">
+            @media screen and (max-width: 768px) {
+                .color-bg-text h3 {
+                    text-align: center;
+                }
+                .color-bg-text p {
+                    text-align: center;
+                }
+                .color-bg-link {
+                    float: unset;
+                    margin-top: 20px;
+                    top: 25px;
+                }
+            }
+        </style>
+        <section class="color-bg" id="bergabung" style="background: #0092FF">
+            <div class="shapes-bg-big"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images-collage fl-wrap">
+                            <div class="images-collage-title">Edu<span>Work</span></div>
+
+                            <div class="images-collage-main images-collage-item" style="background: #0062AD; width: 200px; height: 200px;margin-top: 40px">
+                                <video autoplay="" muted="" loop="" style="position: unset;">
+                                    <source src="https://eduwork.id/video/pelita.mp4?v=2" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <div class="hidden-xs images-collage-other images-collage-item" data-position-left="20" data-position-top="20" data-zindex="2">
+                                <img src="images/avatar/2.jpg" alt="">
+                            </div>
+                            <div class="hidden-xs images-collage-other images-collage-item" data-position-left="62" data-position-top="54" data-zindex="5">
+                                <img src="images/avatar/1.jpg" alt="">
+                            </div>
+                            <div class="hidden-xs images-collage-other images-collage-item" data-position-left="23" data-position-top="55" data-zindex="11">
+                                <img src="images/avatar/6.jpg" alt="">
+                            </div>
+                            <div class="hidden-xs images-collage-other images-collage-item" data-position-left="37" data-position-top="90" data-zindex="1">
+                                <img src="images/avatar/5.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- <video autoplay="" muted="" loop="" style="position: unset;">
+                            <source src="https://eduwork.id/video/pelita.mp4" type="video/mp4">
+                        </video> -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="color-bg-text" style="padding-top: 0 ;">
+                            <h3>Bergabung dengan komunitas kami</h3>
+                            <p style="font-size: 16px">Dengan mengikuti kelas di EduWork , kalian akan otomatis menjadi salah satu member pada komunitas kami. Kalian akan mendapatkan kawan dan mentor yang dapat saling membantu untuk mensupport kesulitan - kesulitan kalian di tempat
+                                kerja.
+                            </p>
+                            <div style="text-align: center;">
+                                <a href="#" style="margin-top:20px" class="color-bg-link  modal-open">Daftar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <link rel='stylesheet' id='elementor-frontend-css' href="https://eduwork.id/css/faq.css" type='text/css' media='all' />
+        <style type="text/css">
+            /*#faq-slider .container { width: 1000px !important }*/
+        </style>
+
+        <section class="elementor-element elementor-element-eff5870 gray-bg elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="eff5870" data-element_type="section" id="faq-slider">
+            <div class="elementor-column-gap-default container">
+                <div class="elementor-row">
+                    <div class="elementor-element elementor-element-03a0f01 elementor-column elementor-col-100 elementor-top-column" data-id="03a0f01" data-element_type="column">
+                        <div class="elementor-column-wrap  elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-3e693b7 elementor-widget elementor-widget-section_title" data-id="3e693b7" data-element_type="widget" data-widget_type="section_title.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="section-title" style="">
+                                            <h2>FAQ</h2>
+                                            <div class="section-subtitle">popular questions</div>
+                                            <span class="section-separator"></span>
+                                            <p style="font-size: 18px">
+                                                apabila ada yang ingin ditanyakan bisa menghubungi wa : 0888-6669-969.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style type="text/css">
+                .elementor-col-50 {
+                    padding: 10px;
+                }
+                
+                .elementor-col-50 p {
+                    font-size: 18px;
+                }
+                
+                .elementor-col-50 .accordion a.toggle {
+                    font-size: 18px
+                }
+            </style>
+            <div class="elementor-column-gap-default container">
+                <div class="elementor-row">
+                    <div class="elementor-element elementor-element-492e36f elementor-column elementor-col-50 elementor-top-column" data-id="492e36f" data-element_type="column">
+                        <div class="elementor-column-wrap  elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-c2fa717 elementor-widget elementor-widget-cth_accordion" data-id="c2fa717" data-element_type="widget" data-widget_type="cth_accordion.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="accordion accordion-wrap">
+                                            <a class="toggle act-accordion" href="#"> Eduwork itu apa ?<i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>Eduwork adalah platform yang memungkinkan kamu mendapatkan pekerjaan idaman dengan cara di bimbing oleh mentor yang akan menjadi teman seperjuanganmu dalam belajar dan ber-karir.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> Cara mendaftar ?<i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>kamu hanya perlu mendaftar di website dengan fasilitas yang sudah disediakan, bisa menggunakan akun facebook, akun gmail atau akun email biasa </p>
+                                            </div>
+                                            <a class="toggle" href="#"> Apakah ada persyaratan? <i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>
+                                                    Persayaratan tergantung mentor masing - masing. yang paling penting memiliki komitmen yang tinggi. Metode ISA persyaratan khusus bersedia langsung bekerja setelah lulus
+                                                </p>
+                                            </div>
+                                            <a class="toggle" href="#"> Apakah itu ISA ?<i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>ISA adalah income sharing agreement, dimana siswa dapat belajar tanpa pembayaran terlebih dahulu, pembayaran dilakukan hanya apabila peserta sudah dapat pekerjaan / penghasilan.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> Apakah ada program Regular (Non ISA) <i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>
+                                                    Ya , dengan model pembayaran diawal dengan sistem deposit
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-53aa7b3 elementor-column elementor-col-50 elementor-top-column" data-id="53aa7b3" data-element_type="column">
+                        <div class="elementor-column-wrap  elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-15837a8 elementor-widget elementor-widget-cth_accordion" data-id="15837a8" data-element_type="widget" data-widget_type="cth_accordion.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="accordion accordion-wrap">
+                                            <a class="toggle" href="#"> Bagaimana proses seleksinya ? <i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>Dengan menjawab soal soal yang ada diberikan melalui sistem yang sudah disediakan diwebsite.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> Bagaimana proses belajarnya ? <i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>Proses belajar bisa offline / online, ketentuan belajar disepakati masing - masing oleh mentor dengan peserta.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> Bagaimana Penyaluranya ?<i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>Eduwork membantu menyalurkan peserta yang sudah lulus dengan cara menawarkan ke perusahaan-perusahaan yang telah bekerjasama dengan kami.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> Bagaimana setelah bekerja ?<i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>setelah bekerja anda masih dapat melakukan konsultasi dan mendapatkan pendampingan dari mentor anda, tentunya dengan waktu dan cara yang telah di sepakati 2 belah pihak.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> Berapa total tanggungan ?  <i class="fa fa-angle-down"></i></a>
+                                            <div class="accordion-inner">
+                                                <p>total yang dibayarkan kepada eduwork &amp; mentor sesuai dengan ketentuan masing-masing mentor. Pilih sesuai yang kalian mau</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="color-bg" id="faq" style="background: #0092FF; ">
+            <div class="shapes-bg-big"></div>
+            <div class="container">
+                <div class="section-title" style="padding-bottom: 0">
+
+                    <!-- <video autoplay="" muted="" loop="">
+                    <source src="https://eduwork.id/video/pelita.mp4" type="video/mp4">
+                </video> -->
+
+                    <h2 style="color: #fff">Ada yang ingin ditanyakan ?</h2>
+                    <div class="section-subtitle">popular questions</div>
+                    <span class="section-separator"></span>
+                    <p style="font-size: 20px;; color: #fff"> Silahkan hubungi 0888-6669-969 </p>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .listing-item-grid .listing-item-cat p {
+                margin-top: 0 !important
+            }
+            
+            .gallery-items {
+                cursor: pointer;
+            }
+            
+            @media only screen and (max-width: 540px) {
+                #explore {
+                    padding: 40px 0 0 0
+                }
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("#explore").find(".gallery-item").click(function() {
+                    var link = $(this).find("a").attr("href");
+                    // window.location.href = link; 
+                    window.open(link, '_blank');
+                })
+            })
+        </script>
+
+        <script>
+            if ('' == 'register') {
+                $(document).ready(function() {
+                    // $("#viewModal").html('<div id="viewModal"></div>');
+                    $("#viewModal").remove();
+                });
+            } else if ('' == 'login') {
+                $(document).ready(function() {
+                    // $("#viewModal").html('<div id="viewModal"></div>');
+                    $("#viewModal").remove();
+                });
+            } else {
+                $(document).ready(function() {
+                    if ('hide' === 'hide') {
+                        $('#viewModal').css('display', 'none');
+                    } else {
+                        $('#viewModal').css('display', 'block');
+                    }
+                    $(".close-reg").click(function() {
+                        // $("#viewModal").html('<div id="viewModal"></div>');
+                        $("#viewModal").remove();
+                    });
+                });
+            }
+        </script>
+
+        <!-- 
+<div class="main-register-wrap modal fade-in" id="viewModal">
+    <div class="close-reg modal-view-close"><i class="fa fa-times"></i></div>
+    <div class="my-view-modal-body" style="width: 100%; height: 100%;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kgMkDnQmV_Q?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allow='autoplay'></iframe>
+    </div>		
+</div> -->
+        <style type="text/css">
+            .modal-video {
+                height: 500px
+            }
+            
+            @media only screen and (max-width: 540px) {
+                .modal-video {
+                    height: 300px
+                }
+            }
+        </style>
+        <script>
+            function stopThis() {
+                var iframe = document.getElementsByTagName("iframe")[0];
+                var url = iframe.getAttribute('src');
+                iframe.setAttribute('src', '');
+                iframe.setAttribute('src', url);
+
+                fetch('https://eduwork.id/hide-modal-video-home-7-days');
+            }
+        </script>
+        <div class="main-register-wrap modal" id="viewModal">
+            <div class="main-overlay"></div>
+            <div class="main-register-holder" style="max-width: 800px;">
+                <div class="main-register modal-video fl-wrap" style="margin-bottom: 0 ; padding-bottom: 0; background: unset;  ">
+                    <div class="close-reg" onclick="stopThis()" style="background: red"><i class="fa fa-times"></i></div>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kgMkDnQmV_Q" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <section id="explore">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Come & Explore Yogyakarta</h2>
+            <div class="section-subtitle">Catalog of Categories</div>
+            <span class="section-separator"></span>
+            <div align="center">
+                <p style="max-width: 800px">Jelajahi ekosistem digital yogyakarta, perpaduan antara digital dengan landscape alam. Perluas jaringan pertemanan , peluang jenjang karir , skill dll . Ayo, mulai pertualangan anda di dunia digital !</p>
+            </div>
+        </div>
+
+        <div class="fl-wrap mr-bot spad">
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/jdv.jpg"   alt="">
+                        <div class="listing-counter"><span>20+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.google.com/maps/search/coworking+space+yogyakarta/@-7.788234,110.3777535,13z" target="_blank">20+ Coworking Space</a></h3>
+                            <p>Pilih coworking space yang kamu suka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item gallery-item-second">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/bg/19.jpg"   alt="">
+                        <div class="listing-counter"><span>250+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.alodiatour.com/wilayah/tempat-wisata-di-jogja/">250+ Tempate Wisata</a></h3>
+                            <p>Pilih tempat wisata yang kamu inginkan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/3.jpg"   alt="">
+                        <div class="listing-counter"><span>100+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.google.com/maps/search/kedai+kopi+yogyakarta/@-7.788061,110.3777534,13z/data=!3m1!4b1">500+ kedai kopi</a></h3>
+                            <p>Rasakan berbagai sensasi nongkrong asik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/22.jpg"   alt="">
+                        <div class="listing-counter"><span>100+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.njogja.co.id/wisata-kuliner/">100+ Kuliner</a></h3>
+                            <p>Rasakan cita rasa makanan khas Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/1.jpg"   alt="">
+                        <div class="listing-counter"><span>20+</span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.eventbrite.com/d/indonesia--yogyakarta/all-events/?page=1">Community & Event</a></h3>
+                            <p>Perluas & Perbanyak pertemanan dan skill mu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section> -->
+
+
+        <style>
+            .listing-item-grid .listing-item-cat p {
+                margin-top: 0 !important
+            }
+            
+            .gallery-items {
+                cursor: pointer;
+            }
+            
+            @media only screen and (max-width: 540px) {
+                #explore {
+                    padding: 40px 0 0 0
+                }
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("#explore").find(".gallery-item").click(function() {
+                    var link = $(this).find("a").attr("href");
+                    // window.location.href = link; 
+                    window.open(link, '_blank');
+                })
+            })
+        </script>
+
+
+        <!-- <section id="explore">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Come & Explore Yogyakarta</h2>
+            <div class="section-subtitle">Catalog of Categories</div>
+            <span class="section-separator"></span>
+            <div align="center">
+                <p style="max-width: 800px">Jelajahi ekosistem digital yogyakarta, perpaduan antara digital dengan landscape alam. Perluas jaringan pertemanan , peluang jenjang karir , skill dll . Ayo, mulai pertualangan anda di dunia digital !</p>
+            </div>
+        </div>
+
+        <div class="fl-wrap mr-bot spad">
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/jdv.jpg"   alt="">
+                        <div class="listing-counter"><span>20+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.google.com/maps/search/coworking+space+yogyakarta/@-7.788234,110.3777535,13z" target="_blank">20+ Coworking Space</a></h3>
+                            <p>Pilih coworking space yang kamu suka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item gallery-item-second">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/bg/19.jpg"   alt="">
+                        <div class="listing-counter"><span>250+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.alodiatour.com/wilayah/tempat-wisata-di-jogja/">250+ Tempate Wisata</a></h3>
+                            <p>Pilih tempat wisata yang kamu inginkan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/3.jpg"   alt="">
+                        <div class="listing-counter"><span>100+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.google.com/maps/search/kedai+kopi+yogyakarta/@-7.788061,110.3777534,13z/data=!3m1!4b1">500+ kedai kopi</a></h3>
+                            <p>Rasakan berbagai sensasi nongkrong asik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/22.jpg"   alt="">
+                        <div class="listing-counter"><span>100+ </span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.njogja.co.id/wisata-kuliner/">100+ Kuliner</a></h3>
+                            <p>Rasakan cita rasa makanan khas Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="grid-item-holder">
+                    <div class="listing-item-grid">
+                        <img  src="https://eduwork.id/images/all/1.jpg"   alt="">
+                        <div class="listing-counter"><span>20+</span> Locations</div>
+                        <div class="listing-item-cat">
+                            <h3><a href="https://www.eventbrite.com/d/indonesia--yogyakarta/all-events/?page=1">Community & Event</a></h3>
+                            <p>Perluas & Perbanyak pertemanan dan skill mu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section> -->
+        <!-- wrapper end -->
+        <!--footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--register form -->
+        <style type="text/css">
+            .invalid-feedback {
+                background: red;
+                color: #fff
+            }
+            
+            .login-register input {
+                float: none !important;
+                margin-bottom: 0
+            }
+            
+            .login-register label {
+                margin-top: 20px
+            }
+            
+            .tabs-menu li a {
+                padding: 15px
+            }
+            
+            .tabs-menu {
+                margin-top: 0
+            }
+            
+            .tab-content {
+                padding: 0 !important
+            }
+            
+            #input-age-modal {
+                float: left;
+                border: 1px solid #d6d6d6;
+                background: #f9f9f9;
+                width: 100%;
+                padding: 15px 20px 15px 55px;
+                border-radius: 6px;
+                color: #666;
+                font-size: 13px;
+                -webkit-appearance: none;
+            }
+        </style>
+        <div class="main-register-wrap modal reg-modal">
+            <div class="main-overlay"></div>
+            <div class="main-register-holder">
+                <div class="main-register fl-wrap">
+                    <div class="close-reg"><i class="fa fa-times"></i></div>
+                    <h3>Sign In <span>Edu<strong>Work</strong></span></h3>
+                    <div class="soc-log fl-wrap">
+                        <p>For faster login or register use your social account.</p>
+                        <a href="https://eduwork.id/social/redirect/facebook" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
+                        <a href="https://eduwork.id/social/redirect/google" class="google-log"><i class="fa fa-google"></i> Log in with Google</a>
+                    </div>
+                    <div class="log-separator fl-wrap" style="margin-bottom: 20px;"><span>or</span></div>
+                    <div id="tabs-container" style="margin-top: 0">
+                        <ul class="tabs-menu" style="text-align:center !important">
+                            <li class="current"><a href="#tab-1" class="tab-login">Login</a></li>
+                            <li><a href="#tab-2" class="tab-register">Register</a></li>
+                            <li class="link_register_mentor"><a href="#">Register Mentor</a></li>
+                        </ul>
+                        <div class="tab text-center">
+                            <div id="tab-1" class="tab-content">
+                                <div class="custom-form login-register">
+                                    <form method="post" name="registerform" class="form-auth-modal" action="https://eduwork.id/login">
+
+                                        <input type="hidden" name="type" value="login">
+
+                                        <label>Email Address * </label>
+                                        <input name="email" required type="text" onClick="this.select()" value="">
+
+                                        <label>Password * </label>
+                                        <input name="password" required type="password" onClick="this.select()" value="">
+
+                                        <button type="submit" class="log-submit-btn"><span>Log In</span></button>
+
+                                        <!-- <a href="https://eduwork.id/social/redirect/google" type="submit"  class="log-submit-btn"><span>Google</span></a>
+                                            <a href="https://eduwork.id/social/redirect/facebook" type="submit"  class="log-submit-btn"><span>Facebook</span></a>  -->
+                                        <div class="clearfix"></div>
+                                        <div class="filter-tags">
+
+                                            <input class="form-check-input" type="checkbox" name="remember" id="remember">
+
+                                            <label class="form-check-label" for="remember" style="margin-top: 0">Remember Me</label>
+
+                                        </div>
+                                    </form>
+                                    <div class="lost_password">
+                                        <a href="https://eduwork.id/password/reset">Lost Your Password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div id="tab-2" class="tab-content" style="padding-top: 0">
+                                    <div class="custom-form login-register">
+                                        <form method="post" class="form-auth-modal" action="https://eduwork.id/register" name="registerform" class="main-register-form" id="main-register-form2">
+
+                                            <input type="hidden" name="type" value="register">
+
+                                            <input type="hidden" name="_token" value="CKZSpNutxgEEaIhQ1zNmdHmTRT5jZ5x3WTxbeEKX"> <label>Name * </label>
+                                            <input name="name" required minlength="4" type="text" onClick="this.select()" value="">
+
+
+                                            <label>Username * </label>
+                                            <input name="nickname" required minlength="4" type="text" onClick="this.select()" value="">
+
+
+                                            <label>Phone * </label>
+                                            <input name="phone" required type="number" style="padding-left: 20px" onClick="this.select()" value="">
+
+
+                                            <label>Email Address *</label>
+                                            <input name="email" required type="text" onClick="this.select()" value="">
+
+                                            <Label>Birth Date *</Label>
+                                            <input type="date" id="input-age-modal" required name="birthday" value="" onClick="this.select()" style="width: 100%; padding: 10px; font-size: 16px;">
+
+                                            <label>Password *</label>
+                                            <input name="password" required minlength="8" type="password" onClick="this.select()" value="">
+
+                                            <label>Password Confirmation *</label>
+                                            <input name="password_confirmation" required minlength="8" type="password" onClick="this.select()" value="">
+
+
+                                            <label>Register as * </label>
+                                            <div id="level" class="row" style="padding-bottom: 15px">
+
+                                                <div class="col-md-4">
+                                                    <div class="add-list-media-header" style="padding-top: 0">
+                                                        <label class="radio inline">
+                                                        <input type="radio" required name="level" value="student" checked
+                                                          >
+                                                        <span>Student</span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <!-- <div class="col-md-4">
+                                                    <div class="add-list-media-header" style="padding-top: 0">
+                                                        <label class="radio inline">
+                                                            <input type="radio" name="level" value="company"
+                                                                >
+                                                            <span>Company</span>
+                                                        </label>
+                                                    </div>
+                                                </div> -->
+
+                                            </div>
+
+                                            <style>
+                                                .checkbox-company {
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    align-items: center;
+                                                }
+                                                
+                                                .checkbox-company label {
+                                                    width: max-content;
+                                                }
+                                                
+                                                .checkbox-company input {
+                                                    margin-top: 10px;
+                                                    margin-left: 12px;
+                                                }
+                                            </style>
+
+                                            <!-- <div class="checkbox-company">
+                                            <label for="company">Are you a company?</label>
+                                            <input id="company" type="checkbox" name="company" value="company">
+                                        </div> -->
+
+                                            <button type="submit" class="log-submit-btn"><span>Register</span></button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--register form end -->
+        <!-- <a class="to-top"><i class="fa fa-angle-up"></i></a> -->
+    </div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

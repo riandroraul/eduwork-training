@@ -1,0 +1,179 @@
+/* .image-2 {
+    position: relative;
+    left: auto;
+    width: 400px;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #fafafa;
+    font-size: 14px;
+}
+
+.wrapper .header {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.wrapper .header .top,
+.wrapper .signup {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 40px 40px 20px;
+}
+
+.wrapper .header .logo img {
+    display: block;
+    margin: 0 auto 35px;
+}
+
+.wrapper .header .logo p {
+    font-family: 'Parisienne', cursive;
+    font-size: 3.5em;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.wrapper .header .form .input_field {
+    margin-bottom: 5px;
+}
+
+.wrapper .header .form .input_field .input {
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #efefef;
+    font-size: 12px;
+    border-radius: 3px;
+    color: #262626;
+    padding: 10px;
+}
+
+.wrapper .header .form .input_field .input:focus {
+    border: 1px solid #b2b2b2;
+}
+
+.wrapper .header .form .btn {
+    margin: 10px 0;
+    background-color: #76c6f5;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+}
+
+.wrapper .header .form .btn a {
+    color: #fff;
+    display: block;
+}
+
+.wrapper .header .or {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin: 15px 0 20px;
+}
+
+.wrapper .header .or .line {
+    width: 105px;
+    height: 2px;
+    background: #efefef;
+}
+
+.wrapper .header .or p {
+    color: #999;
+    font-size: 12px;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.fb .fa {
+    Font-size: 1.4em;
+    Color: rgb(6, 46, 155);
+}
+
+.fb p {
+    color: #385185;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.wrapper .forgot {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper .forgot a {
+    color: #00376b;
+    font-size: 1.2em;
+}
+
+.wrapper .signup {
+    text-align: center;
+}
+
+.wrapper .signup p {
+    border: 0;
+    color: #999999;
+}
+
+.wrapper .signup a {
+    color: #3897f0;
+}
+
+.p3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+.p5 {
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.get-the-app {
+    text-align: center;
+}
+
+.get-the-app img {
+    margin-top: 15px;
+    width: 125px;
+    cursor: pointer;
+}
+
+.wrapper .header .signup {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: -35px;
+}
+
+.wrapper .header .signup a {
+    font-weight: bold;
+}
+
+.wrapper .header .signup p {
+    color: #262626;
+}
